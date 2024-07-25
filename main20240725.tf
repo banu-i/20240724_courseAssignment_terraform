@@ -29,6 +29,6 @@ resource "aws_security_group_rule" "ingress_ssh" {
   type = "ingress"
   cidr_blocks = ["0.0.0.0/0"]
 }
-output "beispiel ip" {
-  
+output "coursAssignment_output_ip" {
+  value = aws_instance.coursAssignment.public_ip
 }
